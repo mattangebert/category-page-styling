@@ -1,0 +1,40 @@
+@charset "UTF-8";
+.product-wrapper {
+  border: 2px solid black;
+  max-width: 300px; }
+  .product-wrapper .card-body {
+    padding: 5px; }
+    .product-wrapper .card-body .product-img {
+      width: 100%; }
+    .product-wrapper .card-body .swatches {
+      display: flex;
+      gap: 5px; }
+    .product-wrapper .card-body .product-swatch {
+      display: inline-block;
+      width: 45px;
+      height: 25px;
+      outline: 1px solid black; }
+      .product-wrapper .card-body .product-swatch .swatch-text {
+        display: none; }
+    .product-wrapper .card-body .product-variants {
+      margin-top: 5px; }
+    .product-wrapper .card-body .product-rating .rating-container {
+      display: flex;
+      gap: 5px; }
+      .product-wrapper .card-body .product-rating .rating-container .rating {
+        display: block;
+        position: relative; }
+        .product-wrapper .card-body .product-rating .rating-container .rating:before, .product-wrapper .card-body .product-rating .rating-container .rating:after {
+          display: block;
+          width: 100%;
+          text-align-last: justify; }
+        .product-wrapper .card-body .product-rating .rating-container .rating:before {
+          content: "☆" "☆" "☆" "☆" "☆"; }
+        .product-wrapper .card-body .product-rating .rating-container .rating:after {
+          content: "★" "★" "★" "★" "★";
+          position: absolute;
+          top: 0;
+          left: 0;
+          overflow: hidden; }
+
+/*# sourceMappingURL=product.css.map */

@@ -1,0 +1,67 @@
+
+$star-unicode--empty:  '\2606';
+$star-unicode--filled:  '\2605';
+
+// @todo write your code/ adjust existing code here
+
+.product-wrapper {
+    border: 2px solid black;
+    max-width: 300px;
+
+    .card-body {
+        padding: 5px;
+
+        .product-img {
+            width: 100%;
+        }
+
+        .swatches {
+            display: flex;
+            gap: 5px;
+        }
+
+        .product-swatch {
+            display: inline-block;
+            width: 45px;
+            height: 25px;
+            outline: 1px solid black;
+
+            .swatch-text {
+                display: none;
+            }
+        }
+
+        .product-variants {
+            margin-top: 5px;
+        }
+
+        .product-rating .rating-container {
+            display: flex;
+            gap: 5px;
+
+            .rating {
+                display: block;
+                position: relative;
+
+                &:before,
+                &:after {
+                    display: block;
+                    width: 100%;
+                    text-align-last: justify;
+                }
+
+                &:before {
+                    content: $star-unicode--empty $star-unicode--empty $star-unicode--empty $star-unicode--empty $star-unicode--empty;
+                }
+    
+                &:after {
+                    content: $star-unicode--filled $star-unicode--filled $star-unicode--filled $star-unicode--filled $star-unicode--filled;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+:root {
+    --page--max-width: 1200px;
+    --page--side-padding: 5px;
+
+    --color--blue : #00F; 
+    --color--green : #008000;
+    --color--brown : #A52A2A;
+    --color--grey : #808080;
+    --color--red : #F00;
+    --color--white : #FFF;
+    --color--pink : #FFC0CB;
+    --color--yellow : #FF0;
+    --color--black : #000;
+    --color--beige : #F5F5DC;
+    --color--navy-blue : #000080;
+    --color--maroon : #800000;
+    --color--purple : #800080;
+    --color--orange : #FFA500;
+    --color--aqua : #0FF;
+
+    --btn--background-color: var(--color--white);
+    --btn--color: var(--color--black);
+
+    --footer--background-color: var(--color--black);
+    --footer--color: var(--color--white);
+}
